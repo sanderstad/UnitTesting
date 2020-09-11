@@ -1,0 +1,6 @@
+﻿CREATE PROCEDURE dbo.Table10_GetAll
+
+AS
+BEGIN
+    SELECT 'Table10_GetAll'
+END

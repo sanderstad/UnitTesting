@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8DCDF46B-55F8-4B90-B727-CBABBE4E6280}") = "UnitTesting-Data", "UnitTesting-Data\UnitTesting-Data.sqlproj", "{B60CFCFA-E40D-452C-BD0F-52AE6287D9AD}"
+EndProject
+Project("{8DCDF46B-55F8-4B90-B727-CBABBE4E6280}") = "UnitTesting-Tests", "UnitTesting-Tests\UnitTesting-Tests.sqlproj", "{C91B543B-8865-4D2C-AC84-36301D92A41A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B60CFCFA-E40D-452C-BD0F-52AE6287D9AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B60CFCFA-E40D-452C-BD0F-52AE6287D9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B60CFCFA-E40D-452C-BD0F-52AE6287D9AD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B60CFCFA-E40D-452C-BD0F-52AE6287D9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B60CFCFA-E40D-452C-BD0F-52AE6287D9AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B60CFCFA-E40D-452C-BD0F-52AE6287D9AD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C91B543B-8865-4D2C-AC84-36301D92A41A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C91B543B-8865-4D2C-AC84-36301D92A41A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C91B543B-8865-4D2C-AC84-36301D92A41A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C91B543B-8865-4D2C-AC84-36301D92A41A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C91B543B-8865-4D2C-AC84-36301D92A41A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C91B543B-8865-4D2C-AC84-36301D92A41A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E480A104-E3B8-4E70-B9DD-7A8CDF0806D2}
+	EndGlobalSection
+EndGlobal

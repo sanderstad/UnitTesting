@@ -1,0 +1,6 @@
+﻿CREATE PROCEDURE dbo.Table8_GetAll
+
+AS
+BEGIN
+    SELECT 'Table8_GetAll'
+END

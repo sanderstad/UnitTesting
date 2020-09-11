@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>UnitTesting_Data</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{B60CFCFA-E40D-452C-BD0F-52AE6287D9AD}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql140DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>UnitTesting_Data</RootNamespace>
+    <AssemblyName>UnitTesting_Data</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Stored Procedures" />
+    <Folder Include="Functions" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnitTesting-Data.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Table1.sql" />
+    <Build Include="dbo\Tables\Table2.sql" />
+    <Build Include="dbo\Tables\Table3.sql" />
+    <Build Include="dbo\Tables\Table4.sql" />
+    <Build Include="dbo\Tables\Table5.sql" />
+    <Build Include="dbo\Tables\Table6.sql" />
+    <Build Include="dbo\Tables\Table7.sql" />
+    <Build Include="dbo\Tables\Table8.sql" />
+    <Build Include="dbo\Tables\Table9.sql" />
+    <Build Include="dbo\Tables\Table10.sql" />
+    <Build Include="dbo\Stored Procedures\Table1_Create.sql" />
+    <Build Include="dbo\Stored Procedures\Table1_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Table1_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\Table1_GetByID.sql" />
+    <Build Include="dbo\Stored Procedures\Table1_Update.sql" />
+    <Build Include="dbo\Stored Procedures\Table2_Create.sql" />
+    <Build Include="dbo\Stored Procedures\Table2_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Table2_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\Table2_GetByID.sql" />
+    <Build Include="dbo\Stored Procedures\Table2_Update.sql" />
+    <Build Include="dbo\Stored Procedures\Table3_Create.sql" />
+    <Build Include="dbo\Stored Procedures\Table3_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Table3_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\Table3_GetByID.sql" />
+    <Build Include="dbo\Stored Procedures\Table3_Update.sql" />
+    <Build Include="dbo\Stored Procedures\Table4_Create.sql" />
+    <Build Include="dbo\Stored Procedures\Table4_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Table4_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\Table4_GetByID.sql" />
+    <Build Include="dbo\Stored Procedures\Table4_Update.sql" />
+    <Build Include="dbo\Stored Procedures\Table5_Create.sql" />
+    <Build Include="dbo\Stored Procedures\Table5_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Table5_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\Table5_GetByID.sql" />
+    <Build Include="dbo\Stored Procedures\Table5_Update.sql" />
+    <Build Include="dbo\Stored Procedures\Table6_Create.sql" />
+    <Build Include="dbo\Stored Procedures\Table6_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Table6_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\Table6_GetByID.sql" />
+    <Build Include="dbo\Stored Procedures\Table6_Update.sql" />
+    <Build Include="dbo\Stored Procedures\Table7_Create.sql" />
+    <Build Include="dbo\Stored Procedures\Table7_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Table7_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\Table7_GetByID.sql" />
+    <Build Include="dbo\Stored Procedures\Table7_Update.sql" />
+    <Build Include="dbo\Stored Procedures\Table8_Create.sql" />
+    <Build Include="dbo\Stored Procedures\Table8_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Table8_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\Table8_GetByID.sql" />
+    <Build Include="dbo\Stored Procedures\Table8_Update.sql" />
+    <Build Include="dbo\Stored Procedures\Table9_Create.sql" />
+    <Build Include="dbo\Stored Procedures\Table9_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Table9_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\Table9_GetByID.sql" />
+    <Build Include="dbo\Stored Procedures\Table9_Update.sql" />
+    <Build Include="dbo\Stored Procedures\Table10_Create.sql" />
+    <Build Include="dbo\Stored Procedures\Table10_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Table10_GetAll.sql" />
+    <Build Include="dbo\Stored Procedures\Table10_GetByID.sql" />
+    <Build Include="dbo\Stored Procedures\Table10_Update.sql" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,6 @@
+﻿CREATE PROCEDURE dbo.Table6_GetByID
+
+AS
+BEGIN
+    SELECT 'Table6_GetByID'
+END
