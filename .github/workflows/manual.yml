@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - id: foo
-        uses: sanderstad/dacpac-build-and-release@v0.0.1
+        uses: sanderstad/dacpac-build-and-release@v0.0.2
         with:
           project-file: UnitTesting.sln
           
